@@ -74,8 +74,8 @@ const ReviewForm: React.FC<ReviewFormProps> = (props) => {
       <div className="flex h-full w-full items-center justify-center overflow-y-auto p-4 py-10">
         {/* Design  */}
         {currentStepId === 'WELCOME_PAGE' && (
-          <div className="relative w-full max-w-lg rounded-xl bg-white p-6 pt-4 shadow-lg">
-            <div className="absolute -top-3.5 right-3 flex items-center gap-2 rounded-full border bg-white px-4 py-1 text-sm">
+          <div className="relative w-full max-w-lg rounded-xl bg-gray-200 p-6 pt-4 shadow-lg bg-white-300 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border border-gray-100">
+            <div className="absolute top-3.5 right-3 flex items-center gap-2 rounded-full border bg-white px-4 py-1 text-sm bg-opacity-30 border border-gray-100">
               <HeartFilledIcon className="h-4 w-4" />
               Powered by Review
             </div>
@@ -83,7 +83,7 @@ const ReviewForm: React.FC<ReviewFormProps> = (props) => {
               <HeartFilledIcon className="h-12 w-12" />
             </div>
             <h1 className="form_title">{formData.introTitle}</h1>
-            <p className="mb-3 text-gray-500">{introMsg[0]}</p>
+            <p className="mb-3 text-gray-700">{introMsg[0]}</p>
             <ul>
               <li className="flex gap-2 text-base text-gray-700">
                 &bull;
